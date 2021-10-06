@@ -1,0 +1,97 @@
+.task {
+    position: relative;
+    border-radius: 3px;
+    padding: 6px 8px 2px;
+    margin-bottom: 8px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 1px 0 #091e4240;
+    font-size: rem(14px);
+    max-width: 250px;
+    cursor: pointer;
+
+    .placeholder{
+        height: 150px;
+    }
+
+    .edit-btn {
+        position: absolute;
+        opacity: 0;
+        right: 2px;
+        top: 2px;
+        display: flex;
+        border: none;
+        background-color: transparent;
+        z-index: 1;
+
+        svg {
+            font-size: 27px;
+            padding: 8px;
+            color: #42526e;
+        }
+
+
+        &:hover {
+            background-color: #ebecf0;
+
+            svg {
+                color: #172b4d;
+            }
+        }
+    }
+
+    &:hover {
+        background-color: #f4f5f7;
+
+        .edit-btn {
+            opacity: 1;
+        }
+    }
+
+    .task-text {
+        margin-bottom: 4px;
+        font-family: $font-regular;
+        position: relative;
+        overflow-wrap: break-word;
+        font-size: 14px;
+        color: #172b4d;
+
+        &.bold{
+            font-family: $font-bold;
+        }
+    }
+
+    .task-members {
+        display: flex;
+        min-height: 1px;
+        float: right;
+        min-width: 1px;
+    }
+    
+    .task-preview-data{
+        float: left;
+        display: flex;
+        align-items: center;
+
+        .task-preview-icon-container{
+            margin: 0 4px 4px 0;
+            color: #6b778c;
+            display: flex;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+
+            svg{
+                font-size: 16px;
+                margin-inline: auto;
+            }
+        }
+    }
+
+
+
+  
+
+    // &.drag-over {
+    // }
+}

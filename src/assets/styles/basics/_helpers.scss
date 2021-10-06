@@ -1,0 +1,245 @@
+// flex helpers
+
+.flex {
+    display: flex;
+
+    >*.full {
+        flex: 1;
+    }
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.row {
+        flex-direction: row;
+    }
+
+    &.justify-center {
+        justify-content: center;
+    }
+
+    &.justify-start {
+        justify-content: flex-start;
+    }
+
+    &.justify-space-between {
+        justify-content: space-between;
+    }
+
+    &.justify-space-around {
+        justify-content: space-around;
+    }
+
+    &.justify-end {
+        justify-content: flex-end;
+    }
+
+    &.align-center {
+        align-items: center;
+    }
+
+    &.align-start {
+        align-items: flex-start;
+    }
+
+    &.align-end {
+        align-items: flex-end;
+    }
+
+    .grow {
+        flex-grow: 1;
+    }
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.w100 {
+    width: 100%;
+}
+
+// Media helpers
+
+.square-ratio {
+    @include aspect-ratio(1, 1);
+}
+
+.video-ratio {
+    @include aspect-ratio(16, 9);
+}
+
+.portrait-ratio {
+    @include aspect-ratio(9, 16);
+}
+
+.site-block {
+    margin-bottom: rem(20px);
+}
+
+.blue-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    color: white;
+    background-color: #0079bf;
+    border: none;
+    border-radius: 3px;
+    margin-right: 4px;
+    font-family: $font-regular;
+
+    &:hover {
+        background-color: #026aa7;
+
+    }
+}
+
+.red-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    color: white;
+    background-color: #b04632;
+    border: none;
+    border-radius: 3px;
+    margin-right: 4px;
+    font-family: $font-regular;
+
+    &:hover {
+        background-color: #933b27;
+
+    }
+}
+
+.grey-btn {
+    background-color: #eaecf0;
+    font-family: $font-light;
+    padding: 6px 12px;
+    border: none;
+    margin-left: 8px;
+    border-radius: 3px;
+
+
+    &:hover {
+        background-color: #e2e4e9;
+    }
+}
+
+.close-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        color: #6b778c;
+
+        &:hover {
+
+            color: #172b4d;
+        }
+    }
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 3px;
+    border-radius: 3px;
+    border: none;
+
+    &:hover {
+        background-color: rgba(9, 30, 66, .08);
+    }
+}
+
+.pop {
+    z-index: 2;
+    top: 50px;
+    border-radius: 3px;
+    position: absolute;
+    background-color: white;
+    width: 304px;
+    box-shadow: $shadow;
+
+    .pop-title {
+        text-align: center;
+        font-size: 14px;
+        font-family: $font-regular;
+        margin: 0 12px;
+        padding: 0 32px;
+        color: #5e6c84;
+        line-height: 40px;
+        border-bottom: 1px solid rgba(9, 30, 66, .13);
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        svg {
+            font-size: 38px;
+            padding: 10px 12px 10px 8px;
+        }
+
+
+    }
+
+    .pop-container {
+        padding: 0 12px 12px;
+    }
+
+    .pop-mini-title {
+        font-size: 12px;
+        margin: 8px 0;
+        font-family: $font-semi;
+        color: #5e6c84;
+    }
+
+    .pop-middle-title {
+        font-size: 12px;
+        font-family: $font-bold;
+        color: #5e6c84;
+        margin: 4px 0;
+    }
+
+    .pop-input {
+        width: 100%;
+        margin: 10px 0 12px;
+        background-color: #fafbfc;
+        box-shadow: inset 0 0 0 2px #dfe1e6;
+        padding: 8px 12px;
+        font-family: $font-regular;
+        border: none;
+        border-radius: 3px;
+        font-size: 14px;
+
+        &:hover {
+            background-color: #ebecf0;
+        }
+
+        &:focus {
+            box-shadow: $blue-shadow;
+            background-color: white;
+        }
+    }
+}
+
+.h100 {
+    height: 100%;
+}
+
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}

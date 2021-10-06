@@ -1,0 +1,35 @@
+.task-preview-lebels {
+
+    display: flex;
+    cursor: pointer;
+    flex-wrap: wrap;
+
+    .label{
+        margin: 0 4px 4px 0;
+        border-radius: 4px;
+        transition: .2s;
+
+    }
+
+    &.small {
+        .label {
+            width: 40px;
+            height: 8px;
+        }
+
+    }
+
+    &.big {
+        .label {
+            padding: 0 8px;
+            height: 16px;
+            min-width: 56px;
+
+            p{
+                font-family: $font-bold;
+                color: white;
+                font-size: 12px;
+            }
+        }
+    }
+}

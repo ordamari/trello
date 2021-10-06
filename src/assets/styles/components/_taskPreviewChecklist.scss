@@ -1,0 +1,29 @@
+.task-preview-checklist {
+ 
+    display: inline-block;
+    border-radius: 3px;
+    margin: 0 4px 4px 0;
+    color: #5e6c84;
+    
+    .container{
+        max-width: 100%;
+        min-height: 20px;
+        padding: 2px 4px;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-family: $font-light;
+
+        svg{
+            margin-right: 2px;
+            font-size: 16px;
+        }
+    }
+
+    &.done{
+        background-color:#61bd4f;
+        color: white;
+    }
+
+    
+}

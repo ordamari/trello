@@ -1,0 +1,71 @@
+.task-preview-date {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    max-width: 100%;
+    min-height: 20px;
+    padding: 2px 4px;
+    color: #5e6c84;
+    background-color: transparent;
+    font-family: $font-light;
+    cursor: pointer;
+    margin: 0 4px 4px 0;
+
+    .uncheck-icon{
+        padding: 3px;
+    }
+
+    &:hover{
+        .check-icon{
+            display: unset;
+        }
+        .clock-icon{
+            display: none;
+        }
+
+        background-color: #ebecf0;
+    }
+
+
+    .check-icon{
+        display: none;
+    }
+
+    svg{
+        font-size: 16px;
+        margin-right: 3px;
+    }
+
+    &.green{
+        color: white;
+        background-color: #61bd4f;
+        
+        &:hover{
+            background-color: #519839;
+        }
+    }
+
+    &.red{
+        color: white;
+        background-color: #ec9488;
+        
+        &:hover{
+            background-color: #eb5a46;
+        }
+
+    }
+
+    &.yellow{
+        color: white;
+        background-color: #f2d600;
+        
+        &:hover{
+            background-color: #d9b51c;
+        }
+    }
+    
+    
+}

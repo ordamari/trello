@@ -1,0 +1,61 @@
+.task-details-description {
+    margin-bottom: 24px;
+
+    .add-desc {
+        margin-left: 37px;
+        padding: 8px 12px;
+        background-color: #eaecf0;
+        border-radius: 3px;
+        min-height: 56px;
+        cursor: pointer;
+        color: #172b4d;
+
+        p {
+            font-size: 14px;
+            font-family: $font-regular;
+        }
+
+        &:hover {
+            background-color: #e2e4e9;
+        }
+
+    }
+
+    .desc {
+        font-family: $font-regular;
+        margin-left: 37px;
+        font-size: 14px;
+        margin-bottom: 8px;
+        cursor: pointer;
+        color: #172b4d;
+    }
+
+    .desc-form {
+        margin-left: 37px;
+
+        textarea {
+            width: 100%;
+            min-height: 108px;
+            padding: 8px 12px;
+            margin-bottom: 4px;
+            border: none;
+            resize: none;
+            color: #172b4d;
+            font-family: $font-regular;
+
+            &:focus {
+                box-shadow: $blue-shadow;
+            }
+        }
+
+        .close-btn {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: none;
+
+        }
+    }
+}

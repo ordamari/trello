@@ -1,0 +1,133 @@
+.board-add {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    .container {
+        display: flex;
+        margin-top: 48px;
+
+        .board-details {
+            position: relative;
+            justify-content: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 300px;
+            padding: 10px 16px;
+            border-radius: 3px;
+
+            input {
+                width: 100%;
+                width: 220px;
+                background-color: transparent;
+                border: none;
+                font-family: $font-bold;
+                font-size: 16px;
+                color: white;
+                border-radius: 3px;
+                padding: 2px 8px;
+
+                &:hover,
+                &:focus {
+                    background-color: rgba(255, 255, 255, 0.15);
+                }
+
+                &::placeholder{
+                    color: rgb(231, 230, 230);
+                }
+            }
+
+            .close-btn {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+
+                svg {
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .bgc-cover-picker {
+            display: grid;
+            grid-template-columns: 28px 28px 28px;
+            grid-gap: 8px;
+            margin-left: 8px;
+
+
+            .background {
+                height: 28px;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                cursor: pointer;
+
+                &.dont-curr {
+                    svg {
+                        display: none;
+                    }
+                }
+
+                &.curr {
+                    svg {
+                        width: 100%;
+                        height: 100%;
+                        color: white;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        padding: 6px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .btns-container {
+        position: absolute;
+        top: 100px;
+        margin-top: 8px;
+        display: flex;
+        left: 0;
+        
+
+        .blue-btn {
+            &.not-allowed{
+                background-color: #F4F5F7;
+                color: #A5ADBA;
+                cursor: not-allowed;
+                
+            }
+        }
+
+        .start-template{
+            display: flex;
+            align-items: center;
+            border: none;
+            background-color: transparent;
+            color: white;
+            margin-left: 8px;
+
+            svg{
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 14px;
+                font-family: $font-regular;
+                margin-left: 5px;
+            }
+        }
+    }
+}

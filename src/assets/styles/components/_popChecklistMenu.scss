@@ -1,0 +1,29 @@
+.task-in-list {
+    .pop {
+        left: 0;
+        top: 25px;
+
+        .btns-container-menu{
+            margin-top: 12px;
+            transform: translateX(-12px);
+            button{
+                width: 304px;
+                border: none;
+                border-radius: 0;
+                color: #6b778c;
+                font-size: 14px;
+                font-family: $font-regular;
+                text-align: left;
+                padding: 6px 12px;
+                background-color: transparent;
+
+                &:hover{
+                    background-color: rgba(9, 30, 66, 0.08);
+                }
+
+            }
+        }
+    }
+
+
+}

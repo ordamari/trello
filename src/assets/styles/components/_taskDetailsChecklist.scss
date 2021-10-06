@@ -1,0 +1,179 @@
+.task-details-checklist {
+
+    .middle-title {
+        flex: 1;
+        cursor: pointer;
+
+        &.checklist-name-form {
+            align-items: flex-start;
+
+            form {
+                width: 100%;
+
+                textarea {
+                    width: 100%;
+                    font-family: $font-bold;
+                    font-size: 16px;
+                    min-height: 56px;
+                    background-color: rgba(9, 30, 66, .04);
+                    border-radius: 3px;
+                    resize: none;
+                    border-color: rgba(9, 30, 66, .13);
+                    padding: 8px 12px;
+                    color: #172b4d;
+                }
+
+                .close-btn {
+                    svg {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .proggres-bar-container {
+
+        display: flex;
+        align-items: center;
+
+        p {
+            font-size: 11px;
+            font-family: $font-light;
+            color: #172b4d;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            margin-right: 7px;
+        }
+
+        .proggres-bar {
+            width: 100%;
+            background-color: #e2e4e9;
+            border-radius: 4px;
+            overflow: hidden;
+
+            .inner {
+                background-color: #5ba4cf;
+                height: 8px;
+                transition: width .2s;
+
+                &.complete {
+                    background-color: $pGreen;
+                }
+            }
+        }
+    }
+
+    .task-list {
+        margin-top: 2px;
+
+        .task-in-list {
+
+            padding: 6px 0 6px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+
+            .menu-btn-container{
+                position: relative;
+                width: 20px;
+                height: 20px;
+            }
+
+            
+
+            .checkbox {
+                margin-right: 15px;
+                cursor: pointer;
+                margin-top: 4px;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                color: #172b4d;
+
+                &.checked {
+                    color: #5e6c84;
+                    text-decoration: line-through;
+                }
+            }
+
+
+            form {
+                width: 100%;
+
+                textarea {
+                    color: #172b4d;
+                    width: 100%;
+                    font-family: $font-regular;
+                    font-size: 14px;
+                    min-height: 56px;
+                    background-color: rgba(9, 30, 66, .04);
+                    border-radius: 3px;
+                    resize: none;
+                    border-color: rgba(9, 30, 66, .13);
+                    padding: 8px 12px;
+                }
+
+
+
+                .close-btn {
+                    svg {
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .menu-btn {
+                display: none;
+            }
+
+            &:hover {
+                background-color: rgba(9, 30, 66, .04);
+
+                .menu-btn {
+                    display: inherit;
+                }
+            }
+        }
+
+    }
+
+    .after-tasks {
+        margin-left: 37px;
+
+        p {
+            margin-top: 8px;
+            color: #5e6c84;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        button.grey-btn {
+            margin: 8px 0;
+        }
+
+        form {
+            margin-top: 8px;
+            width: 100%;
+
+            textarea {
+                width: 100%;
+                resize: none;
+                color: #172b4d;
+                font-family: $font-regular;
+                font-size: 14px;
+                min-height: 56px;
+                border-radius: 3px;
+                padding: 8px 12px;
+                border: none;
+                box-shadow: $blue-shadow;
+            }
+        }
+    }
+}

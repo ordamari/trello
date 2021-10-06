@@ -1,0 +1,39 @@
+.task-preview-cover {
+
+    transform: translate(-8px, -6px);
+    width: 250px;
+    
+    &.cover-top {
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+
+        &.img {
+            img {
+                border-top-right-radius: 3px;
+                border-top-left-radius: 3px;
+                width: 100%;
+            }
+        }
+
+        &.color {
+            height: 32px;
+        }
+    }
+
+    &.cover-all {
+        position: absolute;
+        height: 100%;
+        border-radius: 3px;
+
+        &.img{
+            img{
+                border-radius: 3px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+}

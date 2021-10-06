@@ -1,0 +1,77 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+@import "setup/typography";
+
+// Basics
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+
+// Components
+@import "components/navbar";
+@import "components/footer";
+@import "components/navSearchedBoards";
+
+
+@import "components/column";
+
+@import "components/taskPreview";
+@import "components/taskPreviewLabels";
+@import "components/taskPreviewDate";
+@import "components/taskPreviewChecklist";
+@import "components/taskPreviewMenu";
+@import "components/taskPreviewCover";
+
+@import "components/columnAdd";
+@import "components/taskAdd";
+@import "components/taskUser";
+
+@import "components/taskDetails";
+@import "components/taskDetailsDescription";
+@import "components/taskDetailsActivity";
+@import "components/taskDetailsChecklist";
+
+
+@import "components/popMember";
+@import "components/popLabels";
+@import "components/popChecklist";
+@import "components/popDates";
+@import "components/popCover";
+@import "components/popMove";
+@import "components/popDeleteTask";
+@import "components/popChecklistMenu";
+@import "components/popColumnMenu";
+@import "components/popAccount";
+
+@import "components/boardHeader";
+@import "components/boardMenu";
+@import "components/boardPreview";
+@import "components/boardAdd";
+@import "components/boardUserInvite";
+
+
+@import "components/templateHeader";
+
+// views
+@import "views/home";
+@import "views/board";
+@import "views/loginSignup";
+@import "views/template";
+@import "views/userBoards";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

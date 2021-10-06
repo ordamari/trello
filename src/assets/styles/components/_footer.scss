@@ -1,0 +1,24 @@
+footer{
+    background-color: #f4f5f7;
+
+    .links{
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        a{
+            padding: 0 10px;
+            color: #8993A4;
+        }
+    }
+
+    .name{
+        margin-top: 20px;
+        font-family: $font-logo;
+        font-size: 19px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}

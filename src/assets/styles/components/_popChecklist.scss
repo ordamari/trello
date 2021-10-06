@@ -1,0 +1,55 @@
+.pop-checklist {
+    position: relative;
+    margin-top: 14px;
+
+    .select-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: $font-bold;
+        width: 100%;
+        padding: 8px 12px;
+        background-color: #fafbfc;
+        color: #172b4d;
+        border: none;
+        box-shadow: inset 0 0 0 2px #dfe1e6;
+        border-radius: 3px;
+    }
+
+    .pop-input {
+        margin-top: 0;
+    }
+
+    .blue-btn {
+        margin-top: 22px;
+        padding: 6px 24px;
+    }
+
+    .copy-from {
+
+        background-color: #eaecf0;
+        position: fixed;
+        max-height: 0;
+        transition: .2s;
+        overflow-y: hidden;
+        border-radius: 3px;
+
+        .middle-title {
+            background-color: #ebecf0;
+        }
+
+        .grey-btn {
+            width: 280px !important;
+            border-radius: 0;
+            margin: 0 !important;
+        }
+
+        &.open {
+            max-height: 100%;
+            box-shadow: $shadow;
+
+        }
+    }
+
+
+}

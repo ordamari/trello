@@ -1,0 +1,38 @@
+.pop-account {
+
+
+    .pop-btn {
+        padding: 7px 13px;
+        width: 304px;
+        transform: translateX(-12px);
+        color: #172B4D;
+        left: 0;
+        height: unset;
+        justify-content: flex-start;
+        font-size: 14px;
+        font-family: $font-regular;
+
+        &:hover {
+            background-color: rgba(9, 30, 66, 0.04);
+            border-radius: 0px;
+        }
+    }
+
+    .have-user {
+        .user-details {
+            padding: 10px 0;
+            border-bottom: 1px solid #dfe2e7;
+            margin-bottom: 10px;
+
+            p {
+                font-size: 14px;
+                font-family: $font-regular;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .dont-have-user{
+        margin-top: 12px;
+    }
+}

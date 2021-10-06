@@ -1,0 +1,51 @@
+.user-boards {
+    padding-top: 80px;
+
+    .templates {
+        border-bottom: 1px solid #B3BAC5;
+        padding-bottom: 24px;
+        margin-bottom: 12px;
+
+
+        .boards-container {
+            margin-bottom: 0;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            text-decoration: underline;
+            font-size: 14px;
+            font-family: $font-regular;
+            color: #6b808c;
+        }
+
+    }
+
+    .boards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-gap: 20px;
+        margin-bottom: 24px;
+    }
+
+
+
+    .user-bords-title {
+        display: flex;
+        color: #172b4d;
+        margin-top: 6px;
+        margin-bottom: 11px;
+
+        svg {
+            color: #42526e;
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: $font-semi;
+            margin-left: 5px;
+        }
+    }
+}
